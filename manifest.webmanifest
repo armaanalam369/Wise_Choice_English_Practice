@@ -1,0 +1,25 @@
+{
+  "name": "Wise Choice · Master Competitive English",
+  "short_name": "Wise Choice",
+  "description": "Build your own question library and practise Grammar, Vocabulary and Reading Comprehension — offline.",
+  "id": "./",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070914",
+  "theme_color": "#070914",
+  "categories": ["education", "productivity"],
+  "lang": "en",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "My library", "short_name": "Library", "url": "./?lib=ov", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Add a question", "short_name": "Add", "url": "./?lib=add", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Bulk add questions", "short_name": "Bulk add", "url": "./?lib=bulk", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
