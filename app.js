@@ -255,7 +255,7 @@ function home(keepScroll) {
   if (!q && mock) card += '<div class="line"><span>Full-screen exam mode<small>Warns if you leave full-screen or switch tabs</small></span>' + sw(SET.fullscreen, 'tg', 'fullscreen') + '</div>';
   var nStart = mock ? buildMock().length : Math.min(S.cnt || 1e9, sumC(cSel, selMap()));
   var learn = '<div class="tgrid">' + [['rules', '📘', 'Rule cards'], ['flash', '🗂️', 'Flashcards'], ['wotd', '🌟', 'Word of the Day'], ['pairs', '👯', 'Confusing pairs'], ['daily', '📅', 'Daily routine'], ['rc', '📖', 'RC reader']].map(function (x) { return '<button class="chip" data-act="learn" data-v="' + x[0] + '">' + x[1] + ' ' + x[2] + '</button>'; }).join('') + '</div>';
-  render('<section class="hero"><h1>Your Shortcut throught the Syllabus!</h1><p class="mu">Build your own question library for Grammar, Vocabulary and Reading — then practise with tests, flashcards, rule cards and smart analytics.</p></section>' + stats + homeCards() +
+  render('<section class="hero"><h1>Master Competitive English</h1><p class="mu">Build your own question library for Grammar, Vocabulary and Reading — then practise with tests, flashcards, rule cards and smart analytics.</p></section>' + stats + homeCards() +
     '<h2>Learn</h2>' + learn +
     '<h2>1 · Mode</h2><div class="chips"><button class="chip ' + (!q ? 'on' : '') + '" data-act="kind" data-v="test">📝 Exam Test</button><button class="chip ' + (q ? 'on' : '') + '" data-act="kind" data-v="quiz">💡 Quiz (instant answers)</button></div>' +
     '<h2>2 · Scope</h2><div class="chips"><button class="chip ' + (mock ? 'on' : '') + '" data-act="mode" data-v="mock">Sectional mock</button><button class="chip ' + (!mock ? 'on' : '') + '" data-act="mode" data-v="topic">Topic-wise practice</button></div>' +
@@ -840,7 +840,7 @@ function tSet() {
     '<div class="sec">Help</div><div class="card"><button class="btn g s" data-act="tour">▶ Replay the app tour</button></div>' +
     '<div class="sec">Data</div><div class="card"><p class="mu" style="margin-bottom:10px">Stored on this device: ' + ATT.length + ' tests · ' + Object.keys(SAV).length + ' saved questions · ' + Object.keys(VOC).length + ' words · ' + kb + ' KB</p>' +
     '<div class="row"><button class="btn g s" data-act="export">⬇ Backup</button><button class="btn g s" data-act="import">⬆ Restore</button><button class="btn g s" data-act="wipe" style="color:#ef4444">🗑 Clear data</button></div></div>' +
-    '<p class="mu" style="text-align:center;margin-top:14px">Wise Choice · Master Competitive English</p>';
+    '<p class="mu" style="text-align:center;margin-top:14px">Wise Choice · Your Shortcut through the Syllabus!</p>';
 }
 function sheet() {
   var tabs = [['last', '📊 Last test'], ['all', '📈 Overall'], ['rules', '📘 Grammar rules'], ['vocab', '🗂️ Vocabulary'], ['read', '📖 Reading'], ['sav', '🔖 Revision'], ['set', '⚙️ Settings']];
